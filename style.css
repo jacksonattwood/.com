@@ -1,0 +1,63 @@
+body {
+    background-color: black;
+    overflow: hidden;
+    cursor: crosshair;
+}
+
+a    {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#links {
+    position: absolute;
+    top: 70%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 3;
+}
+
+#signature {
+    width: 15%;
+    height: auto;
+    position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+    #signature {
+        width: 50%;
+        top: -10%;
+        height: 75%;
+    }
+    canvas {
+        position: relative;
+        left: -10px;
+        top: -10px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    canvas {
+        position: absolute;
+        top: -10px;
+    }
+}
+
+#signature {
+    position: absolute;
+    width: 25%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+#backgroundCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
